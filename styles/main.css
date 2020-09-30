@@ -1,3 +1,19 @@
-#fishtank {}
-.fish {}
-.fish__name {}
+@import "fishlist.css";
+
+.contentContainer {
+    display: flex;
+}
+
+.contentContainer__left {
+    flex: 3;
+    border: 1px dashed blue;
+}
+
+.contentContainer__right {
+    flex: 1;
+    border: 1px dashed blue;
+}
+
+section, article, aside {
+    border: 1px dashed blue;
+}
