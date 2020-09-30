@@ -1,0 +1,12 @@
+.fishList {
+    background-color: antiquewhite;
+}
+
+.fishContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fish {
+    border 1px solid black;
+}
