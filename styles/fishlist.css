@@ -1,7 +1,8 @@
 .fishList {
-    background-color: red;
+    background-color: aquamarine;
     display: flex;
     flex-wrap: wrap;
+    border: 1px dashed darkblue;
 }
 
 
