@@ -14,5 +14,10 @@
 }
 
 .fish__image {
-    max-height: 200px;
+    max-width: 180px;
+    max-height: 150px;
+}
+
+.bubba {
+    border-bottom: 12px;
 }

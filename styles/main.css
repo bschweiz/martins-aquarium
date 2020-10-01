@@ -1,8 +1,18 @@
 @import "fishlist.css";
 
 
+header, h3 {
+    text-align: center;
+    color: skyblue;
+}
+
+section, article, aside {
+    border: 1px solid whitesmoke;
+}
+
 .contentContainer {
     display: flex;
+    background-color: darkblue;
 }
 
 .contentContainer__left {
@@ -12,9 +22,17 @@
 
 .contentContainer__right {
     flex: 1;
-    border: 1px dashed blue;
+    border: 4px solid burlywood;
 }
 
-section, article, aside {
-    border: 1px dashed blue;
+.tips {
+    background-color: seagreen;
+}
+
+.travel__location {
+    background-color: steelblue;
+}
+
+.destinations__img {
+    max-width: 450px;
 }
