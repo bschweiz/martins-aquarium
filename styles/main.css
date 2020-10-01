@@ -1,9 +1,18 @@
 @import "fishlist.css";
 
-
-header, h3 {
+#container {
+    background-color: paleturquoise;
+    position: absolute;
+}
+header {
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+}
+h3 {
     text-align: center;
     color: skyblue;
+    font-weight: bold;
 }
 
 section, article, aside {
@@ -25,14 +34,38 @@ section, article, aside {
     border: 4px solid burlywood;
 }
 
-.tips {
-    background-color: seagreen;
+.travel {
+    flex-shrink: 10;
 }
 
 .travel__location {
     background-color: steelblue;
 }
 
+.destinations__list, .quotes__text > p {
+    color: lightseagreen;
+    text-align: center;
+    flex: wrap;
+}
+
+.quotes__source > p {
+    color: steelblue;
+    text-align: center;
+    flex: wrap;
+}
+
 .destinations__img {
     max-width: 450px;
+    border: 2px solid lightseagreen;
+    flex-shrink: 10;
+}
+
+.item__text {
+    border: 2px solid salmon;
+}
+            
+.tips {
+    background-color: seagreen;
+    padding: 5px;
+    text-align: center;
 }

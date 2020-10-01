@@ -7,9 +7,10 @@
 
 
 .fish {
+    flex-grow: 30;
     border: 1px solid black;
     flex-basis: 25%;  
-    justify-content: center;
+    text-align: center;
     padding: 5px;
 }
 
