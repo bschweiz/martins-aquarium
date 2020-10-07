@@ -17,6 +17,24 @@ const fishCollection = [
         length: 0.3,
         location: "Indo-Pacific Oceans",
         image: "https://www.seamester.com/wp-content/uploads/2017/03/lionfish-1-big-768x575.jpg"
+    },
+
+    {
+        name: "Steve",
+        food: "Small fish",
+        species: "Pterois",
+        length: 0.3,
+        location: "Indo-Pacific Oceans",
+        image: "https://www.seamester.com/wp-content/uploads/2017/03/lionfish-1-big-768x575.jpg"
+    },
+
+    {
+        name: "Dave",
+        food: "Small fish",
+        species: "Pterois",
+        length: 0.3,
+        location: "Indo-Pacific Oceans",
+        image: "https://www.seamester.com/wp-content/uploads/2017/03/lionfish-1-big-768x575.jpg"
     }
 ]
 
