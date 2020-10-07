@@ -4,3 +4,5 @@ const fishCollection = [
         food: "crustaceans"
     }
 ]
+
+console.log("welcome fucker")
