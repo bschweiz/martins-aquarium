@@ -4,8 +4,12 @@ import { FishList } from './fish/FishList.js'
 import { useTip } from './tips/TipDataProvider.js'
 import { tipList } from './tips/TipList.js'
 
+import { useLocation } from './locations/LocationDataProvider.js'
+import { locationList } from './locations/LocationList.js'
+
 FishList()
 tipList()
+locationList()
 
 // const allTheFish = useFish();
 
