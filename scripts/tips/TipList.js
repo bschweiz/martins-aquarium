@@ -6,7 +6,7 @@ import { Tip } from "./Tip.js"
 
 import { useTip } from "./TipDataProvider.js"
 // this function peels of a slice from our array of fishes,
-// provides a new arraw for an indiviual fish
+// provides a new array for an indiviual fish
 
 
 export const tipList = () => {
@@ -22,7 +22,7 @@ export const tipList = () => {
         tipHTMLRepresentations += Tip(x)
     }
 
-     // Add the individual fish element
+     // Add the individual tip element
     contentElement.innerHTML += `
       ${tipHTMLRepresentations}
 `
