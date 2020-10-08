@@ -1,3 +1,6 @@
+.fishContainer {
+    display: flex;
+}
 .fishList {
     background-color: aquamarine;
     display: flex;
@@ -5,13 +8,13 @@
     border: 1px dashed darkblue;
 }
 
-
 .fish {
     flex-grow: 30;
     border: 1px solid black;
     flex-basis: 25%;  
     text-align: center;
     padding: 5px;
+    flex-wrap: wrap;
 }
 
 .fish__image {
