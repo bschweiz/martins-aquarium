@@ -1,10 +1,10 @@
 
-import { Fish } from "./fish/Fish.js"
+import { Fish } from "./Fish.js"
 //this function populates an HTML template with data from the object passed to it
 //and generated a "card" of HTML for the webpage
 
 
-import { useFish } from "./fish/FishDataProvider.js"
+import { useFish } from "./FishDataProvider.js"
 // this function peels of a slice from our array of fishes,
 // provides a new arraw for an indiviual fish
 
