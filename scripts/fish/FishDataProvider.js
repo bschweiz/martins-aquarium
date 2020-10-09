@@ -16,7 +16,7 @@ const fishCollection = [
         name: "Jimbo",
         food: "Small fish",
         species: "Pterois",
-        length: 0,
+        length: 0.4,
         location: "Indo-Pacific Oceans",
         image: "https://www.seamester.com/wp-content/uploads/2017/03/lionfish-1-big-768x575.jpg"
     },
@@ -61,7 +61,7 @@ const fishCollection = [
         name: "Steve Jr.",
         food: "Smaller fish",
         species: "Sphyraena",
-        length: 5.5,
+        length: 10,
         location: "Tropical and Subtropical Seas",
         image: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Barracuda_laban.jpg"
     },
@@ -95,9 +95,9 @@ const fishCollection = [
             }
             else {regFish.push(x)}
         }
-        // console.log(holyFish);
-        // console.log(warFish);
-        // console.log(regFish);
+        console.log(holyFish);
+        console.log(warFish);
+        console.log(regFish);
         
         const fishCollectionSorted =  holyFish.concat(warFish,regFish);
         console.log(fishCollectionSorted);
