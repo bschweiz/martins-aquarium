@@ -1,4 +1,4 @@
-import { useFish } from './fish/FishDataProvider.js'
+import { useFish, sortedFish } from './fish/FishDataProvider.js'
 import { FishList } from './fish/FishList.js'
 
 import { useTip } from './tips/TipDataProvider.js'
@@ -10,6 +10,10 @@ import { locationList } from './locations/LocationList.js'
 FishList()
 tipList()
 locationList()
+
+
+
+sortedFish()
 
 // const allTheFish = useFish();
 
