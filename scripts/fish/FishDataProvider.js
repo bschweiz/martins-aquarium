@@ -7,7 +7,7 @@ const fishCollection = [
         name: "Bubba",
         food: "crustaceans",
         species: "Mola mola",
-        length: 5.9,
+        length: 6,
         location: "Temperate and Tropical Oceans Worldwide",
         image: "https://upload.wikimedia.org/wikipedia/commons/8/84/Sunfish2.jpg"
     },
@@ -16,7 +16,7 @@ const fishCollection = [
         name: "Jimbo",
         food: "Small fish",
         species: "Pterois",
-        length: 0.3,
+        length: 0,
         location: "Indo-Pacific Oceans",
         image: "https://www.seamester.com/wp-content/uploads/2017/03/lionfish-1-big-768x575.jpg"
     },
@@ -25,7 +25,7 @@ const fishCollection = [
         name: "Steve",
         food: "Smaller fish",
         species: "Sphyraena",
-        length: 5.5,
+        length: 5,
         location: "Tropical and Subtropical Seas",
         image: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Barracuda_laban.jpg"
     },
@@ -43,7 +43,7 @@ const fishCollection = [
         name: "Bubba Jr.",
         food: "crustaceans",
         species: "Mola mola",
-        length: 5.9,
+        length: 15,
         location: "Temperate and Tropical Oceans Worldwide",
         image: "https://upload.wikimedia.org/wikipedia/commons/8/84/Sunfish2.jpg"
     },
@@ -82,8 +82,29 @@ export const useFish = () => {
 
 // export const addFish = (fishObject) => {
 //     fishCollection.push(fishObject)
-// }
+// 
 
+export const sortedFish = () => {
+    const holyFish = []
+    const warFish = []
+    const regFish = []
+
+    for (const x of fishCollection) {
+        if (x.length % 3 === 0) {
+            holyFish.push(x)
+        }
+        else if (x.length % 5 === 0) {
+            warFish.push(x)
+        }
+        else {regFish.push(x)}
+    }
+    console.log(holyFish);
+    console.log(warFish);
+    console.log(regFish);
+    return holyFish;
+    return warFish;
+    return regFish;
+}
 
 export const mostHolyFish = () => {
 // multiples of 3
@@ -94,11 +115,11 @@ export const mostHolyFish = () => {
             holyFish.push(x)
         } 
     }
+    console.log(holyFish);
     return holyFish;
 
 }
 
-console.log(mostHolyFish());
 
 
 // export const soldierFish = () => {
