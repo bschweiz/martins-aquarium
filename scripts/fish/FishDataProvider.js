@@ -83,3 +83,38 @@ export const useFish = () => {
 // export const addFish = (fishObject) => {
 //     fishCollection.push(fishObject)
 // }
+
+
+export const mostHolyFish = () => {
+// multiples of 3
+    const holyFish = []
+
+    for (const x of fishCollection) {
+        if (x.length % 13 === 0) {
+            holyFish.push(x)
+        } 
+    }
+    return holyFish;
+
+}
+
+console.log(mostHolyFish());
+
+
+// export const soldierFish = () => {
+// //multipules of 5
+//     let soldierFish = []
+
+//     for (const x of fishCollection) {
+//         if (x.length % 5 === 0) {
+//             soldierFish.push(x)
+//         } 
+//     }
+//     return soldierFish
+//     console.log(soldierFish);
+// }
+
+// export const nonHolyFish = () => {
+//     //any fish whose length is not a multiple of 3 or 5
+//     return regularFish
+// }

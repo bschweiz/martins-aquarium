@@ -25,8 +25,5 @@ export const FishList = () => {
      // Add the individual fish element
     contentElement.innerHTML += `
 
-      ${fishHTMLRepresentations}
-`
-
-
-}
+      ${fishHTMLRepresentations}`
+    }
