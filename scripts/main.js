@@ -1,4 +1,4 @@
-import { useFish, mostHolyFish, sortedFish } from './fish/FishDataProvider.js'
+import { useFish, sortedFish } from './fish/FishDataProvider.js'
 import { FishList } from './fish/FishList.js'
 
 import { useTip } from './tips/TipDataProvider.js'
@@ -12,7 +12,7 @@ tipList()
 locationList()
 
 
-mostHolyFish()
+
 sortedFish()
 
 // const allTheFish = useFish();

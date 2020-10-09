@@ -76,49 +76,60 @@ const fishCollection = [
     }
 ]
 
-export const useFish = () => {
-    return fishCollection.slice()
-}
 
 // export const addFish = (fishObject) => {
-//     fishCollection.push(fishObject)
-// 
-
-export const sortedFish = () => {
-    const holyFish = []
-    const warFish = []
-    const regFish = []
-
-    for (const x of fishCollection) {
-        if (x.length % 3 === 0) {
-            holyFish.push(x)
+    //     fishCollection.push(fishObject)
+    // 
+    
+    export const sortedFish = () => {
+        const holyFish = []
+        const warFish = []
+        const regFish = []
+        
+        for (const x of fishCollection) {
+            if (x.length % 3 === 0) {
+                holyFish.push(x)
+            }
+            else if (x.length % 5 === 0) {
+                warFish.push(x)
+            }
+            else {regFish.push(x)}
         }
-        else if (x.length % 5 === 0) {
-            warFish.push(x)
-        }
-        else {regFish.push(x)}
+        // console.log(holyFish);
+        // console.log(warFish);
+        // console.log(regFish);
+        
+        const fishCollectionSorted =  holyFish.concat(warFish,regFish);
+        console.log(fishCollectionSorted);
+
+        // return holyFish;
+        // return warFish;
+        // return regFish;
+        return fishCollectionSorted
+
     }
-    console.log(holyFish);
-    console.log(warFish);
-    console.log(regFish);
-    return holyFish;
-    return warFish;
-    return regFish;
-}
 
-export const mostHolyFish = () => {
-// multiples of 3
-    const holyFish = []
-
-    for (const x of fishCollection) {
-        if (x.length % 13 === 0) {
-            holyFish.push(x)
-        } 
+    var sortedCollection = sortedFish()
+    
+    export const useFish = () => {
+        return sortedCollection.slice()
     }
-    console.log(holyFish);
-    return holyFish;
 
-}
+
+
+// export const mostHolyFish = () => {
+// // multiples of 3
+//     const holyFish = []
+
+//     for (const x of fishCollection) {
+//         if (x.length % 13 === 0) {
+//             holyFish.push(x)
+//         } 
+//     }
+//     console.log(holyFish);
+//     return holyFish;
+
+// }
 
 
 
